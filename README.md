@@ -17,7 +17,7 @@ http://www.csdn.net/article/2015-08-14/2825462
 
 安装好后进入XposedInstaller应用程序，会出现需要激活框架的界面，如下图所示。这里我们点击“安装/更新”就能完成框架的激活了。部分设备如果不支持直接写入的话，可以选择“安装方式”，修改为在Recovery模式下自动安装即可。
 
-<img src="http://img.blog.csdn.net/20150814114556942" width="100%" height="100%" alt="">
+<img src="http://img.blog.csdn.net/20150814114556942" width="40%" height="20%" alt="">
 
 因为安装时会存在需要Root权限，安装后会启动Xposed的app_process，所以安装过程中会存在设备多次重新启动。
 
