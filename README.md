@@ -1,21 +1,24 @@
 登录劫持案例
 ============================
 
-<img src="ScreenShots/code1.jpg" width="40%" height="20%" alt="原代码">
+<img src="ScreenShots/code1.jpg" width="60%" height="40%" alt="原代码">
+
 <img src="ScreenShots/code2.jpg" width="40%" height="20%" alt="劫持代码">
+
 <img src="ScreenShots/screenshot1.jpg" width="40%" height="20%" alt="效果">
 
 代码参考《Android Hook神器：XPosed入门与登陆劫持演示》。
 http://www.csdn.net/article/2015-08-14/2825462
 
 
-安装本地服务XposedInstaller
+需要安装XposedInstall.apk本地服务应用，即工程中的de.robv.android.xposed.installer_v33_36570c.apk。
 
-需要安装XposedInstall.apk本地服务应用，我们能够在其官网的framework栏目中找到，下载并安装。地址为： http://repo.xposed.info/module/de.robv.android.xposed.installer。
+(我们能够在其官网的framework栏目中找到，下载并安装。地址为： http://repo.xposed.info/module/de.robv.android.xposed.installer。)
 
 安装好后进入XposedInstaller应用程序，会出现需要激活框架的界面，如下图所示。这里我们点击“安装/更新”就能完成框架的激活了。部分设备如果不支持直接写入的话，可以选择“安装方式”，修改为在Recovery模式下自动安装即可。
 
- 
+<img src="http://img.blog.csdn.net/20150814114556942" width="100%" height="100%" alt="">
+
 因为安装时会存在需要Root权限，安装后会启动Xposed的app_process，所以安装过程中会存在设备多次重新启动。
 
 TIPS：由于国内的部分ROM对Xposed不兼容，如果安装Xposed不成功的话，强制使用Recovery写入可能会造成设备反复重启而无法正常启动。
