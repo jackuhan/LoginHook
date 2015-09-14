@@ -1,5 +1,10 @@
 登录劫持案例
 ============================
+
+<img src="ScreenShots/code1.jpg" width="40%" height="20%" alt="原代码">
+<img src="ScreenShots/code2.jpg" width="40%" height="20%" alt="劫持代码">
+<img src="ScreenShots/screenshot1.jpg" width="40%" height="20%" alt="效果">
+
 代码参考《Android Hook神器：XPosed入门与登陆劫持演示》。
 http://www.csdn.net/article/2015-08-14/2825462
 
@@ -30,7 +35,6 @@ TIPS：由于国内的部分ROM对Xposed不兼容，如果安装Xposed不成功�
 
 1. 在AndroidManifest.xml文件中配置插件名称与Api版本号
 
-[xml] view plaincopy
 <application  
         android:allowBackup="true"  
         android:icon="@drawable/ic_launcher"  
@@ -57,7 +61,6 @@ TIPS：由于国内的部分ROM对Xposed不兼容，如果安装Xposed不成功�
 
 如下操作，我们新建了一个com.example.loginhook.Main的类，并实现IXposedHookLoadPackage接口中的handleLoadPackage方法，将非com.example.login包名的应用过滤掉，即我们只操作包名为com.example.login的应用。如下所示：
 
-[java] view plaincopy
 public class Main implements IXposedHookLoadPackage {  
   
     /** 
