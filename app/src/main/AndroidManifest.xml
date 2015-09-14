@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.germainz.hook">
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+
+
+        <activity android:name="com.jackuhan.hook.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:enabled="true"
+            android:name="com.jackuhan.hook.MainActivity-Alias"
+            android:targetActivity="com.jackuhan.hook.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+
+        <!-- 模块描述 -->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="登陆劫持的Demo" />
+
+        <!-- 最低版本号 -->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+
+    </application>
+
+</manifest>

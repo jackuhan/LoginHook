@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hook!</string>
+    <string name="pref_support_title">@string/app_name</string>
+    <string name="pref_support_summary">Coded by GermainZ.</string>
+    <string name="pref_xposed_title">Xposed Framework</string>
+    <string name="pref_xposed_summary">This module uses the Xposed Framework by rovo89 and Tungstwenty.</string>
+    <string name="pref_hide_all_title">Hide All Popups</string>
+    <string name="pref_hide_all_summary">Hide all Immersive Mode warnings, not only repeated ones. Reboot Required.</string>
+    <string name="pref_show_app_icon_title">Show app icon</string>
+</resources>
