@@ -31,7 +31,7 @@
         <!-- 模块描述 -->
         <meta-data
             android:name="xposeddescription"
-            android:value="登陆劫持的Demo" />
+            android:value="XposedSViewAllTheCover" />
 
         <!-- 最低版本号 -->
         <meta-data
