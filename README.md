@@ -84,3 +84,10 @@ public class Main implements IXposedHookLoadPackage {
 4. 使用findAndHookMethod方法Hook劫持登陆信息
 
 这是最重要的一步，我们之前所分析的都需要到这一步进行操作。如我们之前所分析的登陆程序，我们需要劫持，就是需要Hook其com.example.login.MainActivity中的isCorrectInfo方法。我们使用Xposed提供的findAndHookMethod直接进行MethodHook操作（与Cydia很类似）。在其Hook回调中使用XposedBridge.log方法，将登陆的账号密码信息打印至Xposed的日志中。
+
+
+## 作者联系方式
+  QQ:1196681436
+  Weibo:http://www.weibo.com/u/1693069642
+
+欢迎提出意见，提交代码。
